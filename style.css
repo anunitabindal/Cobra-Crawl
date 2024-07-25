@@ -1,0 +1,66 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.body{
+    /*background: url("..bg.jpg") ;*/ 
+    background-color: black ; 
+    /* darkolivegreen; */
+    min-height: 100vw;
+    background-size: 100vw 100vh;
+
+    /*to make a flex box*/ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#board{
+    position: relative ; 
+    background: black ; 
+    /*linear-gradient(orange, yellow);*/ 
+    width: 90vmin; 
+    height: 90vmin; 
+    border : 2px solid yellow; 
+    display: grid; 
+    grid-template-rows: repeat(28,1fr);
+    grid-template-columns: repeat(28,1fr);  
+}
+
+.board-container {
+    position: relative; /* Ensure the container is positioned relative */
+    width: 100%; /* Adjust width as per your design */
+    height: 100%; /* Adjust height as per your design */
+}
+
+
+.head{
+    /*background-color: linear-gradient(to-right,darkgreen,green);
+    */
+    background-color: green;
+    border-radius: 10px; 
+    transform: scale(1.04);
+}
+
+.food{
+    background-color: red;
+}
+
+
+.snake{
+    background-color: rgb(113, 174, 21);
+    border-radius: 12px; 
+}
+
+.score {
+    position: absolute;
+    top: 400px;
+    right: 450px;
+    font-size: 20px;
+    color: white; /* Adjust color as per your design */
+    font-family: 'Banger', cursive;
+}
+
